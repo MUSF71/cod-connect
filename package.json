@@ -1,0 +1,22 @@
+{
+  "name": "cod-connect",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+
+    "react": "pnpm --filter react-app",
+    "dev:react": "pnpm --filter react-app dev",
+    "build:react": "pnpm --filter react-app build",
+    "preview:react": "pnpm --filter react-app preview",
+    "lint:react": "pnpm --filter react-app lint",
+
+    "next": "pnpm --filter next-app",
+    "dev:next": "pnpm --filter next-app dev",
+    "build:next": "pnpm --filter next-app build",
+    "start:next": "pnpm --filter next-app start",
+    "lint:next": "pnpm --filter next-app lint"
+  }
+}
