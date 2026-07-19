@@ -15,7 +15,7 @@ export interface AuthLayoutProps {
  */
 export function AuthLayout({ banner, children }: AuthLayoutProps) {
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-page px-4 py-12">
+    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-page px-4 py-12">
       <div
         aria-hidden
         className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-[3rem] border-[3rem] border-white/5"
@@ -29,6 +29,6 @@ export function AuthLayout({ banner, children }: AuthLayoutProps) {
         {banner}
         <div className="flex items-center">{children}</div>
       </div>
-    </div>
+    </main>
   );
 }
