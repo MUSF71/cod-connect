@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { AuthBanner } from "@/components/organisms/AuthBanner/AuthBanner";
-import { LoginForm } from "@/components/organisms/LoginForm/LoginForm";
+import { SignupForm } from "@/components/organisms/SignupForm/SignupForm";
 import { AuthLayout } from "@/components/templates/AuthLayout/AuthLayout";
 
 export const metadata: Metadata = {
-  title: "Login | Code Connect",
+  title: "Cadastro | Code Connect",
 };
 
-export default function LoginPage() {
+export default function CadastroPage() {
   return (
     <AuthLayout
       banner={<AuthBanner src="/auth-banner.png" alt="Code Connect" />}
     >
-      <LoginForm />
+      <SignupForm />
     </AuthLayout>
   );
 }
