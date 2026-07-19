@@ -10,6 +10,7 @@ describe("AuthLayout", () => {
       </AuthLayout>,
     );
 
+    expect(screen.getByRole("main")).toBeInTheDocument();
     expect(screen.getByTestId("banner")).toBeInTheDocument();
     expect(screen.getByText("form content")).toBeInTheDocument();
   });
